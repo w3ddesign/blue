@@ -1,0 +1,176 @@
+#about
+  position: relative
+  padding-top: 60px
+
+  .overlay
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $dark-blue
+    opacity: 0
+    color: white
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    transition: all 0.5s ease-in-out
+
+    &.show
+      opacity: 0.95
+      z-index: 0
+
+    h3
+      max-width: 915px
+      margin: 0 auto
+      font-size: 32px
+      color: $light-bg
+
+  .objetives-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
+    max-width: $guide
+    width: 90%
+    margin: 0 auto
+    flex-wrap: wrap
+    padding-top: 60px
+
+    article
+      width: 33.3333%
+      max-width: 300px
+      margin: 10px 50px
+      text-align: center
+
+      h5
+        font-family: $font
+        font-size: 24px
+
+      p
+        font-family: $font
+        font-size: 18px
+        line-height: 28px
+
+  .back-cta
+    width: 270px
+    padding: 10px
+    text-align: center
+    transition: all 0.3s ease-in-out
+    border: 2px solid $light-blue
+    color: $light-blue
+    background: none
+    margin-top: 60px
+
+    &:hover
+      color: $dark-blue
+      background: $light-bg
+      border: 2px solid $light-bg
+
+.intro
+  background: $light-bg
+  margin-bottom: 40px
+
+  p
+    max-width: 1250px
+    margin: 0 auto
+    text-align: center
+    font-size: 30px
+    padding: 70px 0
+    width: 90%
+
+    @media (max-width: 950px)
+      font-size: 24px
+.mockup
+  background:
+    color: $light-blue
+    image: url(../images/header-bg.jpg)
+    repeat: no-repeat
+    size: cover
+    position: top center
+  height: 400px
+  position: relative
+
+  @media (max-width: 950px)
+    height: 250px
+
+  .filter
+    position: absolute
+    top: 0
+    left: 0
+    background: $light-blue
+    width: 100%
+    height: 100%
+    opacity: 0.8
+
+  img
+    position: absolute
+    bottom: 0
+    left: 50%
+    margin-left: -475px
+
+    @media (max-width: 950px)
+      display: none
+
+.description
+  background-color: $light-grey
+
+  .multicolumn
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: $guide
+    margin: 0 auto
+    width: 90%
+    padding: 30px 0 110px 0
+
+    @media (max-width: 1024px)
+      flex-wrap: wrap
+
+  .col-1, .col-2, .col-3
+    max-width: 380px
+    margin: 0 25px
+
+    @media (max-width: 1024px)
+      margin: 0 auto
+      text-align: center
+
+    a
+      width: 270px
+      padding: 10px
+      text-align: center
+      transition: all 0.3s ease-in-out
+
+    .portfolio-cta
+      border: 2px solid $dark-blue
+      color: $dark-blue
+      background: $light-grey
+
+      &:hover
+        color: $light-grey
+        background: $dark-blue
+
+    .more-cta
+      border: 2px solid $dark-blue
+      background: $dark-blue
+      color: $light-bg
+
+      &:hover
+        background: $light-grey
+        color: $dark-blue
+
+    .contact-cta
+      border: 2px solid $light-blue
+      color: $light-bg
+      background: $light-blue
+
+      &:hover
+        background: $light-grey
+        color: $light-blue
+
+    p
+      font-size: 18px
+      line-height: 30px
+      padding: 60px 0 30px 0
+      color: #585151

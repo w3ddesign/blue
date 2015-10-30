@@ -1,0 +1,23 @@
+section#blog
+  mixin articles(img, alt, a, author, name, date, title)
+    li.article-item
+      a(href="#{a}")
+        img(src="#{img}", alt="#{alt}")
+          
+      .article-info
+        img.author-thumb(src="#{author}")
+        .cite
+          p.author-name #{name}
+          span.date #{date} 
+          p.title #{title}
+  
+  h3 Artículos
+  
+  h4 Información y análisis del mundo del diseño web
+  
+  ul.article-wrap
+    +articles("images/blog/article-1.png", "Article 1", "#", "images/blog/author-1.png", "Leonard", "21/10/2015", "How to write articles")
+    
+    +articles("images/blog/article-2.png", "Article 2", "#", "images/blog/author-1.png", "Leonard", "21/10/2015", "How to write articles")
+    
+    +articles("images/blog/article-3.png", "Article 3", "#", "images/blog/author-2.png", "Leonard", "21/10/2015", "How to write articles")

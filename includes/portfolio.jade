@@ -1,0 +1,29 @@
+section#portfolio
+  
+  mixin portfolio(img, alt, a, title)
+    li.portfolio-item
+      a(href="#{a}")
+        img(src="#{img}", alt="#{alt}")
+        .label
+          .title-wrap
+            p.title #{title}
+        
+  
+  h3 Portfolio
+    
+  ul.portfolio-wrap
+    +portfolio("images/portfolio/octogon.jpg", "Octogon Sports Center", "#", "Octogon Sports Center")
+    
+    +portfolio("images/portfolio/persovuses.jpg", "Persovuses", "#", "Persovuses")
+    
+    +portfolio("images/portfolio/ontime.jpg", "OnTimeService", "#", "On Time Service 24h")
+    
+    +portfolio("images/portfolio/blue.jpg", "Design Studio Template", "#", "Website Template")
+    
+    +portfolio("images/portfolio/flat.jpg", "Design Studio Template", "#", "Website Template")
+    
+    +portfolio("images/portfolio/eagle.jpg", "Design Studio Template", "#", "Website Template")
+    
+    +portfolio("images/portfolio/yellow.jpg", "Business Yellow Template", "#", "Website Template")
+    
+    +portfolio("images/portfolio/portfolio-8.png", "", "#contact", "")

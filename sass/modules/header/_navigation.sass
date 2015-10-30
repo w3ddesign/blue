@@ -1,0 +1,127 @@
+.navigation-wrapper
+  background: none
+  transition: all 0.3s ease-in-out
+  position: fixed
+  z-index: 9999 !important
+  width: 100%
+
+  &.scrolled
+    background: $dark-blue
+
+  @media (max-width: 1200px)
+    display: none
+
+
+.navigation
+  max-width: 1500px
+  margin: 0 auto
+  width: 90%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  transform: scale(1)
+  transition: all 0.3s ease-in-out
+
+  &.scrolled
+    transform: scale (0.8)
+    height: 85px
+    font-size: 18px
+
+  &.scrolled a
+    font-size: 18px
+
+
+
+  .logo
+    max-width: 300px
+    transition: all 0.3s ease-in-out
+    text-align: left
+    margin: 0
+    padding: 0
+
+    &.scrolled
+      transform: scale(0.8)
+
+
+  ul
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    padding: 50px 0
+    transform: scale(1)
+    transition: all 0.3s ease-in-out
+
+
+  a
+    color: white
+    font-family: $header-font
+    font-size: 24px
+    text-align: center
+    padding: 0 30px
+    font-family: 'aleoregular'
+    transition: all 0.3s ease-in-out
+
+
+    @media (max-width: 1350px)
+      padding: 0 15px
+
+    @media (max-width: 730px)
+      padding: 5px
+      font-size: 18px
+
+
+// MOBILE NAVIGATION
+
+.mobile-nav-toggle
+  position: fixed
+  top: 10px
+  right: 10px
+  z-index: 9999 !important
+  cursor: pointer
+  background: white
+  padding: 5px
+  width: 35px
+  height: 35px
+
+  @media (min-width: 1200px)
+    display: none
+
+.mobile-wrapper
+  background: $dark-blue
+  opacity: 0
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 9998
+  width: 100%
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  transform: translateY(-100%)
+  transition: all 0.3s ease-in-out
+
+  &.active
+    opacity: 0.9
+    transform: translateY(0)
+
+  @media (min-width: 1200px)
+    display: none
+
+
+  .logo-mobile
+    margin-bottom: 50px
+
+
+  ul
+    color: white
+    flex-grow: 2
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    a
+      color: white
+      font-size: 24px
+      margin: 10px 0
